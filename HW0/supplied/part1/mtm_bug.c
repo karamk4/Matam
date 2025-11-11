@@ -103,6 +103,7 @@ void freeWords(char** words, int size) {
 	for (int i = 0; i < size; i++) {
 		free(words[i]);
 	}
+	free(words);
 }
 
 int main() {
