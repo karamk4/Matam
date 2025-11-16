@@ -54,7 +54,7 @@ int main ()
 
 int powerOfTwo (int num)
 {
-	if (num == 0) return -1;
+	if (num <= 0) return -1;
 	if (num == 1) return 0;
 	int cpy = num;
 	int counter = 0;
@@ -71,6 +71,5 @@ int powerOfTwo (int num)
 			counter++;
 		}
 	}
-	if ((counter % 2) == 0 && cpy < 0) return -1;
 	return counter;
 }
